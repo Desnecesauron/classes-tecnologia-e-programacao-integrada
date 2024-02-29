@@ -1,0 +1,12 @@
+{
+  "nome": "John",
+  "idade": 25,
+  "cidade": "Los Angeles",
+  "carros": [
+    "Fusca azul",
+    "Gol bola",
+    "Brasília Amarela",
+    "Opalão",
+    "Celta"
+  ]
+}
