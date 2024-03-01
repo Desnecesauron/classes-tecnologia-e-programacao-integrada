@@ -1,4 +1,4 @@
-#Problema 1
+# Problema 1
 # Rolien e Naej são os desenvolvedores de um grande portal de programação.
 # Para ajudar no novo sistema de cadastro do site, eles requisitaram a sua ajuda.
 # Seu trabalho é fazer um código que valide as senhas que são cadastradas no portal,
@@ -16,6 +16,7 @@
 
 import re
 
+
 def validate_password(s):
     if len(s) < 6 or len(s) > 32:
         return False
@@ -29,6 +30,7 @@ def validate_password(s):
         return False
 
     return True
+
 
 print("Enter the password: ")
 while True:
