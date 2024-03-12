@@ -1,0 +1,225 @@
+POST http://localhost:5001/calc
+Content-Type: application/json
+
+{
+  "num1": 5,
+  "num2": 3,
+  "op": "+"
+}
+
+<> 2024-03-11T230814.200.json
+
+###
+
+POST http://localhost:5001/calc
+Content-Type: application/json
+
+{
+  "num1": 5,
+  "num2": 3,
+  "op": "-"
+}
+
+<> 2024-03-11T230837.200.json
+
+###
+
+POST localhost:5001/calc
+Content-Type: application/json
+Cookie: key=first-value
+
+{ "num1" : 2, "num2": 5, "op": "*" }
+
+<> 2024-03-11T230844.200.json
+
+###
+
+POST http://localhost:5001/calc
+Content-Type: application/json
+
+{
+  "num1": 10,
+  "num2": 2,
+  "op": "/"
+}
+
+<> 2024-03-11T230854.200.json
+<> 2024-03-11T230848.200.json
+
+
+#####################
+
+
+POST http://localhost:5002/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "John Doe",
+  "email": "john@example.com"
+}
+
+<> 2024-03-11T231007.200.json
+
+
+
+###
+
+GET http://localhost:5002/users
+
+<> 2024-03-11T231142.200.json
+<> 2024-03-11T231138.200.json
+<> 2024-03-11T231129.200.json
+<> 2024-03-11T231010.200.json
+<> 2024-03-11T230948.200.json
+
+###
+
+PUT http://localhost:5002/users/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "John Doe Updated",
+  "email": "john_updated@example.com"
+}
+
+<> 2024-03-11T231141.200.json
+<> 2024-03-11T231125.200.json
+
+
+###
+
+DELETE http://localhost:5002/users/1
+
+<> 2024-03-11T231132.200.json
+
+
+
+#####################
+
+POST http://localhost:5003/tasks
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Fazer compras",
+  "description": "Comprar leite e pão"
+}
+
+<> 2024-03-11T231214.200.json
+
+
+###
+
+GET http://localhost:5003/tasks
+
+<> 2024-03-11T231444.200.json
+<> 2024-03-11T231353.200.json
+<> 2024-03-11T231311.200.json
+<> 2024-03-11T231302.200.json
+<> 2024-03-11T231257.200.json
+
+
+###
+
+PUT http://localhost:5003/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Fazer compras atualizado",
+  "description": "Comprar leite, pão e ovos"
+}
+
+<> 2024-03-11T231307.200.json
+
+
+###
+
+PUT http://localhost:5003/tasks/1
+Content-Type: application/json
+
+{
+  "completed": true
+}
+
+<> 2024-03-11T231349.200.json
+
+
+###
+
+DELETE http://localhost:5003/tasks/1
+
+<> 2024-03-11T231440.200.json
+
+
+#####################
+
+
+POST http://localhost:5004/products
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Product 1",
+  "price": 10.99,
+  "stock": 100
+}
+
+<> 2024-03-11T231731.200.json
+
+
+###
+
+GET http://localhost:5004/products
+
+<> 2024-03-11T231751.200.json
+<> 2024-03-11T231742.200.json
+<> 2024-03-11T231737.200.json
+<> 2024-03-11T231734.200.json
+
+
+###
+
+PUT http://localhost:5004/products/1
+Content-Type: application/json
+
+{
+  "stock": 90
+}
+
+<> 2024-03-11T231741.200.json
+
+###
+
+DELETE http://localhost:5004/products/1
+
+<> 2024-03-11T231748.200.json
+
+###
+
+POST http://localhost:5004/cart
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Product 1",
+  "quantity": 2
+}
+
+<> 2024-03-11T231755.200.json
+
+###
+
+GET http://localhost:5004/cart
+
+<> 2024-03-11T231803.200.json
+<> 2024-03-11T231758.200.json
+
+###
+
+DELETE http://localhost:5004/cart/1
+
+<> 2024-03-11T231802.200.json
+
+

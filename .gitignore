@@ -7,3 +7,9 @@
 /dataSources/
 /dataSources.local.xml
 .idea/
+
+
+/lista3-06-03-24/cart.json
+/lista3-06-03-24/products.json
+/lista3-06-03-24/users.json
+/lista3-06-03-24/tasks.json
