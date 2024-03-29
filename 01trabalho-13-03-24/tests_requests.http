@@ -1,0 +1,74 @@
+###
+# Criar uma nova enquete
+POST http://localhost:5000/api/enquetes
+Content-Type: application/json
+
+{
+  "descricao": "Enquete Teste 1"
+}
+
+###
+# Criar uma nova enquete
+POST http://localhost:5000/api/enquetes
+Content-Type: application/json
+
+{
+  "descricao": "Enquete Teste 2",
+  "opcoes": [
+    {
+      "descricao": "Opcao 1"
+    },
+    {
+      "descricao": "Opcao 2"
+    },
+    {
+      "descricao": "Opcao 3"
+    }
+  ]
+}
+
+###
+# Listar todas as enquetes
+GET http://localhost:5000/api/enquetes
+
+###
+# Obter detalhes de uma enquete específica
+GET http://localhost:5000/api/enquetes/2
+
+###
+# Votar em uma opção específica de enquete
+POST http://localhost:5000/api/enquetes/2/votar
+Content-Type: application/json
+
+{
+  "id_opcao": 1
+}
+
+###
+# Ver os resultados de uma enquete específica
+GET http://localhost:5000/api/enquetes/1/resultados
+
+###
+# Ver os resultados de uma enquete específica
+GET http://localhost:5000/api/enquetes/2/resultados
+
+###
+# Visualizar as opções de uma enquete específica
+GET http://localhost:5000/api/enquetes/2/opcoes
+
+###
+# Adicionar uma nova opção a uma enquete existente
+POST http://localhost:5000/api/enquetes/1/opcoes
+Content-Type: application/json
+
+{
+  "descricao": "Opcao Teste 1"
+}
+
+###
+# Deletar uma opção de uma enquete
+DELETE http://localhost:5000/api/enquetes/1/opcoes/4
+
+###
+# Deletar uma enquete
+DELETE http://localhost:5000/api/enquetes/1
