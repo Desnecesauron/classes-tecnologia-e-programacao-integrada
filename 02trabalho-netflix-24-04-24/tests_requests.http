@@ -1,0 +1,51 @@
+
+
+### Register a new user
+POST http://localhost:5000/api/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "email": "testuser@test.com",
+  "password": "testpassword"
+}
+
+### Login a user
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+
+### Get all content
+GET http://localhost:5000/api/content
+
+### Get details of a specific content
+GET http://localhost:5000/api/content/1
+
+### Play a specific content
+GET http://localhost:5000/api/play/1/1
+
+### Get viewing history of a user
+GET http://localhost:5000/api/history/1
+
+### Search for content
+GET http://localhost:5000/api/search?title=The%20Shawshank%20Redemption
+
+### Search for content
+GET http://localhost:5000/api/search?title=The&genre=Drama
+
+### Get all playlists of a user
+GET http://localhost:5000/api/playlist/1
+
+### Create a playlist
+POST http://localhost:5000/api/playlist
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "content_id": 3
+}
+
