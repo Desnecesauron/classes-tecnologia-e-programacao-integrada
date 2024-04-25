@@ -25,6 +25,9 @@ GET http://localhost:5000/api/content
 ### Get details of a specific content
 GET http://localhost:5000/api/content/1
 
+### Get details of a specific content
+GET http://localhost:5000/api/content/0
+
 ### Play a specific content
 GET http://localhost:5000/api/play/1/1
 
@@ -35,17 +38,26 @@ GET http://localhost:5000/api/history/1
 GET http://localhost:5000/api/search?title=The%20Shawshank%20Redemption
 
 ### Search for content
+GET http://localhost:5000/api/search?title=The
+
+### Search for content
+GET http://localhost:5000/api/search?title=aaaaa
+
+### Search for content
 GET http://localhost:5000/api/search?title=The&genre=Drama
+
+### Search for content
+GET http://localhost:5000/api/search?title=The&genre=Dramaa
 
 ### Get all playlists of a user
 GET http://localhost:5000/api/playlist/1
 
-### Create a playlist
+### Create (or add a movie to) a playlist
 POST http://localhost:5000/api/playlist
 Content-Type: application/json
 
 {
   "user_id": 1,
-  "content_id": 3
+  "content_id": 1
 }
 
